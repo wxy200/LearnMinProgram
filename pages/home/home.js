@@ -1,23 +1,47 @@
 // pages/home/home.js
-Component({
-  /**
-   * 组件的属性列表
-   */
-  properties: {
-
+Page({
+  data:{
+    name:"nihao shijie",
+    student:[
+      {id:1,name:'abiao',age:18},
+      {id:2,name:'ab',age:19},
+      {id:3,name:'iao',age:28},
+      {id:4,name:'ao',age:16}
+      ],
+      counter:0
   },
-
-  /**
-   * 组件的初始数据
-   */
-  data: {
-
+  add(){
+    this.setData({
+      counter:this.data.counter+1
+    })
   },
-
-  /**
-   * 组件的方法列表
-   */
-  methods: {
-
+  //监听页面滚动
+  onPageScroll(obj){
+    console.log(obj)
+  },
+  //页面被加载出来时
+  onLoad(){
+    console.log('onload')
+    wx.request({
+      url: 'http://123.207.32.32:8000/recommend',
+      success:(res)=>{
+          console.log(res)
+      }
+    })
+  },
+  //页面被显示出来时
+  onShow(){
+    console.log('onshow')
+  },
+  //页面初次渲染完成时
+  onReady(){
+    console.log('onready')
+  },
+  //当页面隐藏起来时
+  onHide(){
+    console.log('onhide')
+  },
+  onUnload(){
+    console.log('onunload')
   }
 })
