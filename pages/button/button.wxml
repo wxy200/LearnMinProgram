@@ -1,0 +1,7 @@
+<!--pages/button/button.wxml-->
+<text>pages/button/button.wxml</text>
+<button type="primary">按钮</button>
+<!-- 镂空效果 -->
+<button plain>aniu</button>
+<!-- loading -->
+<button loading>按钮</button>

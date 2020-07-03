@@ -1,0 +1,19 @@
+<!--pages/input/input.wxml-->
+<text>pages/input/input.wxml</text>
+<!-- input基本使用 可但标签，可双标签 -->
+<input/>
+<!-- type决定键盘的类型 -->
+<!-- 数字键盘 -->
+<input type="number"></input>
+<!-- 身份证键盘 -->
+<input type="idcard"></input>
+<!-- 带小数点数字键盘 -->
+<input type="digit"></input>
+<!-- 文本输入键盘 -->
+<input type="text"></input>
+<!-- 暗文 -->
+<input password></input>
+<!-- 占位符 -->
+<input placeholder hidden></input>
+<!-- confirm-type-->
+<input confirm-type="send"></input>

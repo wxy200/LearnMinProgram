@@ -1,0 +1,10 @@
+<!--pages/view/view.wxml-->
+<text>pages/view/view.wxml</text>
+<!-- image得基本使用 -->
+<!-- 可以写成单标签 也可以写成双标签   -->
+<!-- image组件默认有自己得大小 -->
+<!-- 行内块级元素  inline-block -->
+<image src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1593701017&di=f0e5ff1fa0c73792373bd4e21ff3ca92&src=http://a0.att.hudong.com/64/76/20300001349415131407760417677.jpg"></image>
+<!-- <image/> -->
+<button bindtap="myclick">选中图片</button>
+<image src="{{imagePath}}"></image>
