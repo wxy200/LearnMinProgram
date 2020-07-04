@@ -1,0 +1,16 @@
+/* pages/shijian/shijian.wxss */
+.view1{
+  height: 1000rpx;
+  width: 1000rpx;
+  background-color: darkorange;
+}
+.view2{
+  height: 700rpx;
+  width: 700rpx;
+  background-color: darkorchid;
+}
+.view3{
+  height: 400rpx;
+  width: 400rpx;
+  background-color: greenyellow;
+}

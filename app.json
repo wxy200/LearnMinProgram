@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/shijian/shijian",
+    "pages/wxss/wxss",
     "pages/scroll-view/scroll-view",
     "pages/input/input",
     "pages/view/view",

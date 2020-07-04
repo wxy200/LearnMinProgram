@@ -1,0 +1,15 @@
+<!--pages/shijian/shijian.wxml-->
+<text>pages/shijian/shijian.wxml</text>
+<!-- 监听事件的冒泡和捕获 -->
+<!-- bind 一层层传递 -->
+<!-- <view class="view1" capture-bind:tap="handleView1" bindtap="handleBind1">
+  <view class="view2" capture-bind:tap="handleView2" bindtap="handleBind2">
+     <view class="view3" capture-bind:tap="handleView3" bindtap="handleBind3"></view>
+  </view>
+</view> -->
+<!-- catch:阻止事件的进一步传递 -->
+<view class="view1" capture-bind:tap="handleView1" bindtap="handleBind1">
+  <view class="view2" capture-bind:tap="handleView2" catchtap="handleBind2">
+     <view class="view3" capture-bind:tap="handleView3" bindtap="handleBind3"></view>
+  </view>
+</view>

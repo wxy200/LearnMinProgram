@@ -1,0 +1,14 @@
+/* pages/wxss/wxss.wxss */
+.box{
+  background-color: cyan;
+  font-size: 50px;
+}
+/* .hei{
+  background-color: darkorange;
+} */
+.container{
+  display: flex;
+}
+.item{
+  flex:1;
+}

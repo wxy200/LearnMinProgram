@@ -1,0 +1,13 @@
+// <!-- wxs的定义格式 -->
+// <!-- wxs的定义格式 -->
+  var message="hello"
+  var name="wang"
+  var sum=function(num1,num2){
+    return num1+num2
+  }
+  //comminjs得模块化导出写法
+  module.exports={
+    message:message,
+    name:name,
+    sum:sum
+  }

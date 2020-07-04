@@ -1,0 +1,82 @@
+<!--pages/wxss/wxss.wxml-->
+<!-- <text>pages/wxss/wxss.wxml</text> -->
+<!-- 行内样式 -->
+<!-- <view style="color:red"> hhaha</view> -->
+<!-- 页内样式 -->
+<!-- <view class="box">额呵呵</view> -->
+<!-- 全局样式 -->
+<!-- <view class="hei">heihehie</view> -->
+<!-- <view hidden>hehhehehehhe</view> -->
+<!-- <view>----------------------------------</view>
+<!-- 可以遍历数组，也可以便利字符串 -->
+<view wx:for="{{['abc','acb','bac','bca','cab','cba']}}">{{item}} {{index}}</view>
+<view wx:for="{{9}}">{{item}} {{index}}</view>
+<!-- block标签
+<block wx:for="{{3}}">
+    <button>按钮</button>
+    <view>ok</view>
+    <text>yes</text>
+</block> -->
+<!-- template -->
+<view>--------------------------------</view>
+<!-- <template name="content">
+  <view>啊哈哈</view>
+  <button>按钮</button> -->
+<!-- </template>
+<template is="content"></template>
+<template name="content1">
+  <view>{{h}}</view>
+  <button>{{btn1}}</button>
+</template>
+<template is="content1" data="{{h:'hahahah',btn1:'按钮'}}"></template> --> -->
+<!-- wxs的定义格式
+<wxs module="info">
+  var message="hello"
+  var name="wang" -->
+  <!-- var sum=function(num1,num2){
+    return num1+num2
+  }
+  //comminjs得模块化导出写法 -->
+  <!-- module.exports={
+    message:message,
+    name:name,
+    sum:sum
+  }
+</wxs> -->
+<!-- 2.2定义在单独得wxs中，在使用wxs标签就行导入 ,不能使用绝对路径，需要使用相对路径-->
+<wxs src="../../wxs/info.wxs" module="info"/>
+<view>{{info.message}}</view>
+<view>{{info.sum(20,30)}}</view>
+<!-- 3.wxs得应用 -->
+<wxs  src="../../wxs/format.wxs" module="format"></wxs>
+<view>{{format.priceFormat(price)}}</view>
+<view>{{format.dataFormat(time,'yyyy-MM-dd hh:mm:ss')}}</view>
+<!-- 事件 -->
+<button bindtap="myclick">按钮</button>
+<button bind:tap="myclick">按钮</button>
+<button catchtap="myclick">按钮</button>
+<view></view>
+<!-- 事件的传递参数 -->
+<view class="container">
+  <block wx:for="{{titles}}" wx:key="{{index}}">
+<!-- 通过data-进行参数的传递 -->
+    <view class="item"
+      bindtap="handleItem"
+      data-index="{{index}}"
+      data-item="{{item}}">
+      {{item}}
+    </view>
+  </block>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
